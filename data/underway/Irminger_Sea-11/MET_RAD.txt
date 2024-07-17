@@ -1,0 +1,70 @@
+Instrument Make:  RMR - Remote Measurements & Research Company 
+Instrument Model: RAD - Radiometer Analog to Digital Interface with Eppley SPP 
+(Standard Precision Pyranometer)  and  PIR  (Precision  Infrared  Radiometer)
+SWR/SPP  S/N  38213F3
+LWR/PIR  S/N  38139F3
+Analog to digital interface S/N: RAD_222 
+Calibration Date: 2020-07-20
+
+Installation:  Installed on the top of the MET mast 2021-07-19
+
+RAW datafile: MET 2016/03/14 22:22:50.683 RAD $WIR22,16/03/14,22:22:50, 175, -227.7, 323.05, 16.21, 15.06, 322.53, 20.2, 10.6
+
+dsLog time stamp:
+MET 2016/03/14 22:22:50.683  RAD 
+
+MET                 Meteorological Sensor
+2016/03/14          date in gmt
+22:22:50.683        time in gmt
+RAD                 data collected from the radiometers
+data		    $WIR22,16/03/14,22:22:50, 175, -227.7, 323.05, 16.21, 15.06, 322.53, 20.2, 10.6
+
+
+Example Value	Heading		Description						Unit	
+$WIR22		ID 		NMEA-style tag.                                		-
+16/03/14	DATE  		yy/MM/dd					 	GMT
+22:22:50	TIME 		hh:mm:ss						GMT
+175		# 		the number of samples that went into the averages.	-
+-227.7		PIR 		the average voltage from the PIR thermopile.		millivolts
+323.05		LW		the computed longwave downwelling irradiance		W m-2.
+16.21		TCASE 		the PIR case temperature				°C.
+15.06		TDOME 		the PIR dome temperature				°C.
+322.53		SW		the computed shortwave downwelling irradiance.		W m-2.
+20.2		T-AVR 		the temperature on the circuit board.			°C.
+10.6		BATT 		the battery voltage after the input diode drop		volts
+
+## NOTES
+ommand?>
+WIR22 BOARD (REV B) VERSION: 1.17c, VERSION DATE: 2009,03,24
+Digital Interface Board - Rev C. Feb 2009
+Current datetime: 210721,182807
+ -----USER ENTER INFORMATION-----------------------------
+'k' -->Set PSP coefficient (8.01E-6 v/(W/m^2))
+'K' -->Set PIR coefficient (3.04E-6 v/(W/m^2))
+'A' -->Change Identifier String. (22)
+ -----RAD CALIBRATION DATA---------------------------------
+'g' -->Set PSP amplifier gain value. (118.8)
+'o' -->Set PSP amplifier offset, mv. (0.1 mv)
+'G' -->Set PIR amplifier gain value. (825.2)
+'O' -->Set PIR amplifier offset, mv. (1.7 mv)
+'C' -->Set Case 33274.0 ohms, -6.622e-5, 9.528e-2, -3.398e1
+'D' -->Set Dome 33122.0 ohms, -4.220e-5, 7.334e-2, -2.929e1
+'V' -->Set Thermistor Reference & ADC Reference Voltage (4.1 mV).
+ Cmax = 2048 (fixed)
+ ---------DATE & TIME SETTING------------------------------
+'T' -->Set the date/time.
+ -----TIMING SETTING---------------------------------------
+'L' -->Set averaging time in seconds. (10)
+ -----OTHER------------------------------------------------
+'S' -->Sample 12 bit A to D.
+'r' --> toggle test mode.
+'X' -->Exit this menu, return to operation.
+=========================================================
+Command?>
+TIMEOUT: Return to sampling
+$WIR22,21/07/21,18:28:50, 176, -111.1, 463.98, 32.50, 31.96, 332.81, 40.0, 12.5
+$WIR22,21/07/21,18:29:00, 175, -112.3, 464.62, 32.52, 31.94, 332.42, 40.0, 12.5
+$WIR22,21/07/21,18:29:10, 176, -111.1, 464.60, 32.53, 31.97, 332.37, 40.0, 12.5
+$WIR22,21/07/21,18:29:20, 175, -112.4, 464.43, 32.53, 31.96, 332.68, 40.0, 12.5
+$WIR22,21/07/21,18:29:30, 175, -111.4, 464.36, 32.53, 31.97, 333.01, 40.0, 12.5
+$WIR22,21/07/21,18:29:40, 176, -110.8, 464.45, 32.54, 31.99, 332.94, 40.0, 12.5

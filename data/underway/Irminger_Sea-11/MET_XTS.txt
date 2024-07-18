@@ -1,0 +1,56 @@
+Instrument Make:  Vaisala
+Model: WXT520
+S/N: D0220001, PTU S/N S0740181
+Calibration Date : 2020-03-10
+Inatallation Date: 2020-06-19
+Installation Location: Starboard WXT sensor on mast
+Height above Water Line: 17.9m    
+Updated: 2020-06-20 cts 
+
+
+RAW datafile:
+MET 2016/02/20 14:00:05.194 WXTS SR0,Dm=012D,Sn=12.3M,Sm=12.8M,Sx=13.2M,Ta=25.9C,Ua=76.2P,Pa=1010.7H,Rc=1.13M,Ri=0.0M
+
+dsLog time stamp:
+MET 2016/02/20 14:00:05.194 WXTS
+
+MET                 Meteorological Sensor
+2016/02/20          date in gmt
+14:00:05.194        time in gmt
+WXTS                data collected using starboard WXT520
+data                SR0,Dm=012D,Sn=12.3M,Sm=12.8M,Sx=13.2M,Ta=25.9C,Ua=76.2P,Pa=1010.7H,Rc=1.13M,Ri=0.0M
+
+
+
+PR0,Dm=012D,Sn=12.3M,Sm=12.8M,Sx=13.2M,Ta=25.9C,Ua=76.2P,Pa=1010.7H,Rc=1.13M,Ri=0.0M
+
+Data Parsed     data                            Units
+SR0             Starbaord Vaisala address S0    na
+Dm=004D         Wind Direction Average          degrees
+Sn=8.4M         Wind Speed Minimum              m/s
+Sm=11.2M        Wind Speed Average              m/s
+Sx=13.0M        Wind Speed Maximum              m/s
+Ta=11.3         Temperature                     Degrees C
+Ua=90.4P        Relative Humidity               percent
+Pa=986.4H       Air Pressure                    hPa
+Rc=63.34M       Rain Accumulation               mm
+Ri=8.4M         Rain Intensity                  mm/h
+
+
+
+Notes:
+Barometer is being corrected using: WXTS_Pa + (.1185mb/m * 17.9)
+It is corrected in the datascreen.db and the csv files. In the .XTS files
+it is uncorrected.
+
+True Wind and Direction are being calulated using the SAMOS c-codes.
+http://samos.coaps.fsu.edu/html/tools_truewinds.php
+True Wind values are in the csv file and although these values are calculated, they are
+considered raw.
+
+## Sensor Configuration 2020-06-20
+
+SRU,R=11111100&10100000,I=60,U=M,S=M,M=R,Z=M,X=10000,Y=100
+STU,R=11010000&11010000,I=60,P=H,T=C
+SWU,R=11111100&01011100,I=10,A=10,G=1,U=M,D=0,N=W,F=4
+

@@ -1,0 +1,58 @@
+Instrument Make: Vaisala
+Model: WXT520
+S/N: C3620001, PTU S/N S0740182
+Calibration Date: 2020-03-10
+Installation Date: 2020-06-19
+Installation Location: Port WXT sensor on met mast
+Height above Water Line: 17.9m    
+Updated: 2020-06-20 cts
+
+
+17.9 meters above waterline.
+
+RAW datafile:
+MET 2016/03/11 17:00:04.891 WXTP PR0,Dm=036D,Sn=9.5M,Sm=9.9M,Sx=10.3M,Ta=20.1C,Ua=88.2P,Pa=1021.4H,Rc=181.28M,Ri=0.0M
+
+dsLog time stamp:
+MET 2016/03/11 17:00:04.891 WXTP 
+
+MET                 Meteorological Sensor
+2013/01/30          date in gmt
+14:00:05.194        time in gmt
+WXTP                data collected using Port WXT520
+data                PR0,Dm=036D,Sn=9.5M,Sm=9.9M,Sx=10.3M,Ta=20.1C,Ua=88.2P,Pa=1021.4H,Rc=181.28M,Ri=0.0M
+
+
+
+PR0,Dm=036D,Sn=9.5M,Sm=9.9M,Sx=10.3M,Ta=20.1C,Ua=88.2P,Pa=1021.4H,Rc=181.28M,Ri=0.0M
+
+Data Parsed     data                            Units
+PR0             Port Vaisala address P0         na
+Dm=036D         Wind Direction Average          degrees
+Sn=9.5M         Wind Speed Minimum              m/s
+Sm=9.8M         Wind Speed Average              m/s
+Sx=10.3M        Wind Speed Maximum              m/s
+Ta=20.1         Temperature                     Degrees C
+Ua=88.2P        Relative Humidity               percent
+Pa=1021.4H      Air Pressure                    hPa
+Rc=181.28M      Rain Accumulation               mm
+Ri=0.0M         Rain Intensity                  mm/h
+
+
+
+Notes:
+Barometer is being corrected using: WXTP_Pa + (.1185mb/m * 17.9) 
+It is corrected in the datascreen.db and the csv files. In the .XTP files
+it is uncorrected.
+
+True Wind and Direction are being calulated using the SAMOS c-codes.
+http://samos.coaps.fsu.edu/html/tools_truewinds.php
+True Wind values are in the csv file and although these values are calculated, they are
+considered raw.
+
+## Sensor configuration 2020-06-20
+
+PRU,R=11111100&10100000,I=60,U=M,S=M,M=R,Z=M,X=10000,Y=100
+PTU,R=11010000&11010000,I=60,P=H,T=C
+PWU,R=11111100&01011100,I=10,A=10,G=1,U=M,D=0,N=W,F=4
+

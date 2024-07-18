@@ -1,0 +1,61 @@
+Instrument Make and Model: Biospherical Instruments QSR2150A
+S/N: 50211
+Calibration Date: 2021-07-06
+Installation: Met Mast 2021-07-19  
+
+RAW datafile: MET 2016/03/06 13:00:07.544 PAR $ME, 1943.201, 16.06, 12.928
+
+dslog time stamp:
+MET 2016/03/06 13:00:07.544 PAR
+
+MET		Meteorological Sensor
+2016/03/06	Date in GMT
+13:00:07.544	Time in GMT
+PAR		Data collected from the PAR sensor
+
+
+Sensor data:
+$ME, 1943.201, 16.06, 12.928
+
+Example value		Description			Units
+$ME			NMEA Tag			
+1943.201		calibrated sensor reading	microEinsteins/m2
+16.06			circuit board temp		Degrees C
+12.928			supply voltage			DC voltage
+
+
+### Notes
+
+$ME, 1244.774, 34.73, 15.455
+
+Biospherical Instruments Inc: Digital Log Engine v: 2.07
+
+Model: QSR2150A 50211
+A to set number of samples averaged before update: 160
+B to set the baudrate, now: 9600
+C to set the Calibration Factor for digital output: 0.000707
+D to set the description available for display in software: QSR50211
+I to send unit ID and serial number (password protected)
+J to set the immersion factor (not automatically applied): 1.000000
+K to set dark zero, currently dark = 0.009384v. 
+M to set the operating mode (0=streaming, 1=polled with tag= A) currently 0
+O to configure the OUTPUTs, temperature is enabled, line voltage is enabled
+P to set a preamble for the data transmission = $ME, 
+Q to set startup mode (1 = no diagnostic messages, or 0 for diagnostics): 1
+R to set ADC sample rate: 16
+S to send ADC diagnostic information
+T will give the latest temperature reading 
+U sets the calibration units: uE/m2/sec
+W to set the how calibration constants are used
+Calibration Mode = B
+Output will be calibrated for use in air dividing net volts by 0.000707 with 
+  units of uE/m2/sec
+X to restart sampling
+Sensor temperature: 34.73 C
+Input Supply Voltage measures 15.518v
+
+>Timed out waiting for response.  Restarting sensor.
+
+$ME, 1250.173, 34.73, 15.497
+$ME, 1253.050, 35.14, 15.476
+
